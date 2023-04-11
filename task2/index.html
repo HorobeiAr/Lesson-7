@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<script>
+		//Задача 1. Створити функцію, яка за номером місяця повертає його назву.
+		const userNumberMonth = parseInt(prompt(`Введіть номер місяця від 1 до 12 `))
+
+		function getMonth() {
+			let resultMonth
+			switch (userNumberMonth) {
+				case 1: resultMonth = 'January'
+					break;
+				case 2: resultMonth = 'Febrary'
+					break;
+				case 3: resultMonth = 'March'
+					break;
+				case 4: resultMonth = 'April'
+					break;
+				case 5: resultMonth = 'May'
+					break;
+				case 6: resultMonth = 'June'
+					break;
+				case 7: resultMonth = 'July'
+					break;
+				case 8: resultMonth = 'August'
+					break;
+				case 9: resultMonth = 'September'
+					break;
+				case 10: resultMonth = 'October'
+					break;
+				case 11: resultMonth = 'November'
+					break;
+				case 12: resultMonth = 'December'
+					break;
+				default: resultMonth = 'Error'
+					break;
+			}
+			return resultMonth
+		}
+		let someMonth = getMonth()
+		console.log(`${someMonth}`);
+
+	</script>
+</body>
+
+</html>

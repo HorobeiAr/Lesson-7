@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<script>
+		//Задача 5. Створити окремі функції, які переводять:
+		//1)	Сантиметри у дюйми;
+		//2)	Кілограми у фунти;
+		//3)	Кілометри у милі.
+
+
+		const someUnitSm = parseInt(prompt(`Введіть значення у сантиметрах`))
+		function getInch(smt) {
+			return smt / 2.54.toFixed(3)
+		}
+		//========================================================================================================================================================
+
+		const someUnitKg = parseInt(prompt(`Введіть значення у кілограмах`))
+
+		function getFunt(kilo) {
+			return kilo * 2.205.toFixed(3)
+		}
+
+		//========================================================================================================================================================
+
+		const someUnitKm = parseInt(prompt(`Введіть значення у кілометрах`))
+
+		function getLenth(lenght) {
+			return lenght * 1.6.toFixed(3)
+		}
+		let result = getLenth(someUnit)
+
+		console.log(`${result}`);
+	</script>
+</body>
+
+</html>

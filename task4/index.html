@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<script>
+		//Задача 3. Створити окремі функції, які для 4 чисел знаходять: 
+
+		//1)суму;
+		function getSumm(firstNumber, secondNumber, thirdNumber, fouthNumber) {
+			return firstNumber + secondNumber + thirdNumber + fouthNumber
+		}
+		//2)добуток;
+		function getSumm(firstNumber, secondNumber, thirdNumber, fouthNumber) {
+			return (firstNumber * secondNumber) * (thirdNumber * fouthNumber)
+		}
+
+		//3)середнє арифметичне;
+		function getSumm(firstNumber, secondNumber, thirdNumber, fouthNumber) {
+			return (firstNumber + secondNumber + thirdNumber + fouthNumber) / 4
+		}
+
+		//4)мінімальне значення. 
+		function getSumm(firstNumber, secondNumber, thirdNumber, fouthNumber) {
+			return Math.min(firstNumber, secondNumber, thirdNumber, fouthNumber)
+		}
+		let someResult = getSumm(3, 12, 44, 25)
+		console.log(`${someResult}`);
+	</script>
+</body>
+
+</html>

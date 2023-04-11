@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<script>
+		//Задача 4. Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: кількість парних, кількість додатних, кількість більших за 100
+
+		function getDifferentValues() {
+			let evenNumbersValue = 0
+			let positiveNumbers = 0
+			let over100Numbers = 0
+
+			for (let i = 0; i < arguments.length; i++) {
+				if (arguments[i] % 2 === 0) evenNumbersValue++
+				if (arguments[i] > 0) positiveNumbers++
+				if (arguments[i] > 100) over100Numbers++
+			}
+			return ` Кількість парних чисел складає ${evenNumbersValue}<br>
+								Кількість чисел більших за нуль складає: ${positiveNumbers}<br>
+								Кількість чисел які більші за 100 складає ${over100Numbers}
+					`
+		}
+		const num1 = parseInt(prompt('Введіть перше число', 0))
+		const num2 = parseInt(prompt('Введіть друге число', 0))
+		const num3 = parseInt(prompt('Введіть третє число', 0))
+
+		document.write(getDifferentValues(num1, num2, num3))
+	</script>
+</body>
+
+</html>

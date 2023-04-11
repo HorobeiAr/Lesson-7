@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<script>
+		//Задача 10. Дано покази температур (довільна кількість). Розробити функцію, яка дозволить знайти середнє значення для додатних показів температури.
+
+
+		function getRandomValueTemperature(minvalue, maxvalue) {
+			return minvalue + Math.floor(Math.random() * (maxvalue - minvalue + 1))
+		}
+		const minTemperature = -50
+		const maxTemperature = 50
+
+		let temperature1 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature2 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature3 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature4 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature5 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature6 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature7 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature8 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature9 = getRandomValueTemperature(minTemperature, maxTemperature)
+		let temperature10 = getRandomValueTemperature(minTemperature, maxTemperature)
+
+
+		function getAverageScoreTemperature() {
+			let scoreAverageTemperature = 0
+			for (let i = 0; i < arguments.length; i++) {
+				if (arguments[i] > 0) {
+					scoreAverageTemperature++
+				}
+			}
+			return scoreAverageTemperature / arguments.length
+		}
+		document.write(`All values of temperature: ${temperature1}, ${temperature2}, ${temperature3}, ${temperature4}, ${temperature5}, ${temperature6}, ${temperature7}, ${temperature8}, ${temperature9},${temperature10}<br> <br>`)
+		document.write(`Quantity values whose temprerature is higher then 0 ${getAverageScoreTemperature(temperature1, temperature2, temperature3, temperature4, temperature5, temperature6, temperature7, temperature8, temperature9, temperature10)}`)
+
+	</script>
+</body>
+
+</html>

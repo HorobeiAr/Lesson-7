@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 7</title>
+</head>
+
+<body>
+	<script>
+		//Задача 6. Створити функцію, яка створює таблицю з вказаною кількістю рядків і стовпців (таблиця заповнюється заданим фіксованим повідомленням).
+		function newTable(rows, columns, message) {
+			let someTable = `<table border = "1">
+				<tbody>`
+			for (let i = 1; i <= rows; i++) {
+				someTable += `<tr>`
+				for (let j = 1; j <= columns; j++) {
+					someTable += `<td>${message}</td>`
+				}
+			}
+			someTable += `
+				<tbody>
+			</table>`
+			return someTable
+		}
+
+		const howRows = parseInt(prompt('Enter quantity rows do you want to see'))
+		const howColumns = parseInt(prompt('Enter quantity columns do you want to see'))
+		const userMessage = (prompt('Enter message do you want to see'))
+
+		document.write(newTable(howRows, howColumns, userMessage))
+
+
+
+	</script>
+</body>
+
+</html>
